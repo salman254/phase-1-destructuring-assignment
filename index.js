@@ -1,7 +1,24 @@
+// 1. Animal names
 const farmAnimals = 'cow horse sheep pig chicken';
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ');
 
+// 2. Assigning four traditional animals correctly
+const [bessie, dolly, babe, little] = ['cow', 'sheep', 'pig', 'chicken'];
+
+// 3. Assigning traditional animal colors correctly
+const [blackAndWhite, black, pink] = ['cow', 'sheep', 'pig'];
+
+// 4. Rainbow colors
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
 
+// 5. Rainbow color initials
+const [r, o, y, g, b, i, v] = colors;
+
+// 6. Indigo using indg
+const [, , , , , indg] = colors;
+
+// 7. Muppet object destructuring
 const muppet = {
   muppetName: 'Miss Piggy',
   color: 'pink',
@@ -9,7 +26,9 @@ const muppet = {
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+const { muppetName, color, song, job, partner } = muppet;
 
+// 8. Nested Muppet object destructuring
 const nestedMuppet = {
   nestedName: 'Kermit',
   nestedColor: 'green',
@@ -24,6 +43,9 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+const { album: { theMuppetMovie: { song2, song4 } }, nestedJob, nestedPartner } = nestedMuppet;
+
+
 
 // Strings
 
